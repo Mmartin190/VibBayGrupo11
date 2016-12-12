@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2016, 19:34:18
+    Author     : Migue
+*/
+
+/* CSS GLOBAL PARA NAVBAR Y FOOTER*/
+
+/* NAVBAR */
+
+nav{ 
+    width:100%;
+    background: #911f27; /*Color de la cabecera*/
+
+}
+nav .brand-logo {
+    margin-left: 20px;
+}
+nav ul li {
+    color: #6150CE;
+} /*Color del Login*/
+
+/* FOOTER */
+
+.page-footer {
+    background-color:  #630a10 !important;
+    width: 100%;
+}
+
+.page-footer .container .row .material-icons{
+    color: white;
+    background-color: #FC7854;
+    font-size: 25px;
+    position: relative;
+    /*top:3px;*/
+    border-radius: 100%;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.15em;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 0 1px white, 
+        0 0 0 1px #e0e0e0;
+
+    vertical-align: middle;
+    margin: 0px 10px 10px 0px;
+}
+
+.page-footer .container .row li{
+    color: white;
+    position: relative;
+    text-align: left;
+}
+.page-footer .container .row li a{
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.footer-copyright .container{
+    margin-left: 10px;
+}

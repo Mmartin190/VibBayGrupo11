@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Importar jQuery antes que materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />   
+        <!--Importar iconos de Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Buda:300|Cabin+Sketch|Dosis|Josefin+Sans|Neucha" rel="stylesheet">
+        <!--CSS local-->
+        <link href="css/Perfil.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/cssGlobal.css">
+        <!--Declaracion de codigo comun --> 
+        <script src="js/codigoComun.js"></script>
+        <script src="js/Perfil.js"></script>
+        <title>VibBay - Perfil</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="images/V_redonda_transparencia.png"/>
+        <meta charset="utf-8">
+
+
+
+
+    </head>
+    <body>
+        <script type="text/javascript"> callNavBar();</script>
+        <div class="row"> 
+            <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                <br>
+
+                <div class="FichaUsuario">
+                    <br>
+                    <br>
+                    <div class="caracteristicas">
+                        <div class="row">
+                            <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1">
+                                    <i class="material-icons prefix">chat_bubble</i>
+                                    <font size='+1'>Bienvenid@:</font>
+                                <div id="Nombre">
+                                </div>
+                            </div>
+                            <div class="col s3 m3 l3">
+                                    <i class="material-icons prefix">email</i>
+                                    <font size='+1'>Correo Electronico:</font>
+                                <div id="CorreoElectronico">                    
+
+                                </div>
+                            </div>
+                            <div class="col s3 m3 l3">
+                                    <button id="Comprar" type="button" class="puja waves-effect waves-light btn blue z-depth-5" name="action" style="width: 200px">PUJAR</button>
+                                    <p></p>
+                                    <button id="Vender" type="button" class="puja waves-effect waves-light btn green z-depth-5" name="action" style="width: 200px">VENDER</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                        <div class="row">
+                            <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                                <i class="material-icons prefix">reorder</i>
+                                <button id="CargarMisArticulos" type="button" class="puja btn blue" name="action" style="width: 400px">VER MIS ARTICULOS</button>
+                            </div>
+                        </div>
+
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <ul class="collection">
+
+                                <!--Mis objetos-->
+                                <li class="collection-item">
+                                    <div class="row">
+                                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                                            <br>
+                                            <div id="MisObjetos">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <i class="material-icons prefix">reorder</i>
+                            <button id="CargarMisPujas" type="button" class="puja btn blue" name="action" style="width: 400px">VER MIS PUJAS</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <ul class="collection">
+
+                                <!--Mis pujas-->
+                                <li class="collection-item">
+                                    <div class="row">
+                                        <div class="col s8 m8 l8 offset-s1 offset-m1 offset-l1">
+                                            <br>
+                                            <div id="MisPujas">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col s2 m2 l2 offset-s5 offset-m5 offset-l5">
+                            <button id="Salir" class="puja waves-effect waves-light btn red z-depth-5" name="action" style="width: 200px">CERRAR SESION</button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            callFooter();
+        </script>
+
+    </body>    
+
+
+
+
+
+
+
+

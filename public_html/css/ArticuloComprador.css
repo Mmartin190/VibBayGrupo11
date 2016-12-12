@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2016, 13:34:25
+    Author     : Migue
+*/
+
+body{
+    background-color: #f7d098;/*COLOR DE FONDO DE LA PANTALLA*/
+}
+div.fichaArticulo{
+    background-color: white;
+    border-radius: 5%;
+}
+/*Menu de puja*/
+.div.MenuPuja{    
+    background-color: white;
+    border-radius: 5%;
+}
+/*Panel donde se guardan el menu de puja y el de vendedor*/
+.div.card-panel{
+    border-radius: 5%;
+}
+/*Boton de puja*/
+.div.BotonPuja{
+    text-align: center;
+}
+/*Boton de venta*/
+.div.BotonVenta{
+    text-align: center;
+}
+.caracteristicas.row.Nombre{
+    position: relative;
+    text-align: justify;
+}
+.caracteristicas.row.PrecioSalida{
+    position: relative;
+    text-align: justify;
+}
+.caracteristicas.row.Categoria{
+    position: relative;
+    text-align: justify;
+}
+
+/* Clase para cuando el panel movil esta en la parte superior*/
+.pin-top {
+    position: relative;
+}
+
+/*Clase para cuando el panel movil esta en la parte inferior*/
+.pin-bottom {
+    position: relative;
+}
+
+/*Clase para cuando el panel movil esta en la zona central*/
+.pinned {
+    position: fixed !important;
+}

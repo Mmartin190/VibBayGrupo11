@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <!--Importar jQuery antes que materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />   
+        <!--Importar iconos de Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Buda:300|Cabin+Sketch|Dosis|Josefin+Sans|Neucha" rel="stylesheet">
+        <!--CSS local-->
+        <link href="css/Registro.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/cssGlobal.css">
+        <!--Declaracion de codigo comun --> 
+        <script src="js/codigoComun.js"></script>
+        <script src="js/Registro.js"></script>
+        
+        <title>VibBay - Registro</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="images/VibBay.jpeg"/>
+        <meta charset="utf-8">
+
+
+
+
+    </head>
+    <body>
+        <script type="text/javascript"> callNavBar();</script>
+        <form>
+            <div class="row"> <!-- bloque con datos e imagenes del articulo-->
+                <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                    <br>
+                    <div class="fichaArticulo z-depth-5">
+                        <br>
+                        <div class="row">
+                            <div class="col s10 m10 l10 offset-s2 offset-m2 offset-l2">
+                                <img src="images/VibBay.jpeg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                                <i class="material-icons prefix">account_circle</i>
+                                <font size='+1'>Nombre (Obligatorio):</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="iNombreUsuario" placeholder="Tu nombre" class="validate" required/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">assignment_ind</i>
+                                <font size='+1'>DNI (Obligatorio):</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="iDNI" placeholder="Tu DNI" class="validate" required/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">date_range</i>
+                                <font size='+1'>Fecha de nacimiento:</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="date" id="iFechaNacimiento" placeholder="Tu fecha de nacimiento" class="validate"/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">email</i>
+                                <font size='+1'>Email (Obligatorio):</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="email" id="iEmail" placeholder="Tu email" class="validate" required/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">stay_current_portrait</i>
+                                <font size='+1'>Nº Movil (Obligatorio):</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="iTelefono" placeholder="Tu telefono" class="validate" required/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">vpn_key</i>
+                                <font size='+1'>Contraseña 1 (Obligatorio):</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="password" id="iContraseña" placeholder="Tu contraseña" class="validate" required/>
+                                    </div>
+                                </div>
+                                <i class="material-icons prefix">vpn_key</i>
+                                <font size='+1'>Contraseña 2 (Obligatorio) :</font>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="password" id="iContraseña2" placeholder="Repite tu contraseña" class="validate" required/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col s2 m2 l2 offset-s5 offset-m5 offset-l5">
+                                <button id="iRegistrarse" class="waves-effect waves-green btn-flat" type="button" name="action" style="width: 200px">REGISTRARTE</button>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+            callFooter();
+        </script>
+
+    </body>
+</html>
+

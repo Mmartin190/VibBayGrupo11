@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <!--Importar jQuery antes que materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />   
+        <!--Importar iconos de Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Buda:300|Cabin+Sketch|Dosis|Josefin+Sans|Neucha" rel="stylesheet">
+        <!--CSS local-->
+        <link href="css/ArticuloNuevo.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/cssGlobal.css">
+        <!--Declaracion de codigo comun --> 
+        <script src="js/codigoComun.js"></script>
+        <script src="js/ArticuloNuevo.js"></script>
+        
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+        
+        <title>Vibbay - Articulo Nuevo</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="images/VibBay.jpeg"/>
+        <meta charset="utf-8">
+
+
+
+
+    </head>
+    <body>
+        <script type="text/javascript"> callNavBar();</script>
+        <form>
+        <div class="row"> <!-- bloque con datos e imagenes del articulo-->
+            <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                <br>
+                <div class="fichaArticulo z-depth-5">
+                        <br>
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <p></p>
+
+                            <div id="caja" ondrop="drop(event)" ondragover="allowDrop(event)">Arrastra la foto aqui</div>
+                            <input type="hidden" name="imagen" id="Imagen">
+                            
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1">
+                                    <i class="material-icons prefix">chat_bubble</i>
+                                    <font size='+1'>Nombre:</font>
+                                    <div class="row">
+                                    <div class="input-field">
+                                    <input type="text" id="Nombre" placeholder="Nombre" class="validate" required/>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col s3 m3 l3">
+                                    <i class="material-icons prefix">https</i>
+                                    <font size='+1'>Precio de salida:</font>
+                                    <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="PrecioSalida" class="validate" placeholder="Precio de salida X.XXX,XX" required/>
+                                    </div>
+                                    </div>
+                            </div>
+                           <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1 ">
+                                    <i class="material-icons prefix">stars</i>    
+                                    <font size='+1'>Categoria:</font>
+                                    <div class="row">
+                                    <div class="input-field">
+                                    <input type="text" id="Categoria" placeholder="Categoria" class="validate" list="opciones" required/>
+                                    <datalist id="opciones">
+                                        <option value="Hogar"></option>
+                                        <option value="Moda"></option>
+                                        <option value="Deporte"></option>
+                                    </datalist>
+                                    </div>
+                                    </div>
+                           </div>
+                        </div>
+                    <br>
+                        <div class="row">
+                            <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                                <i class="material-icons prefix">reorder</i>
+                                <font size='+1'>Descripcion:</font>
+                                <div class="row">
+                                <div class="input-field">
+                                <input type="text" id="Descripcion" placeholder="Descripcion" class="validate" />
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col s2 m2 l2 offset-s5 offset-m5 offset-l5">
+                            <div class="input-field">
+                            <button id="Guardar" type="button" class="waves-effect waves-green btn-flat" name="action">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        </form>
+        <script type="text/javascript">
+            callFooter();
+        </script>
+
+    </body>
+</html>
+
+

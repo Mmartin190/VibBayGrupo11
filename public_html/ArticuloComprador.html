@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Importar jQuery antes que materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />   
+        <!--Importar iconos de Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Buda:300|Cabin+Sketch|Dosis|Josefin+Sans|Neucha" rel="stylesheet">
+        <!--CSS local-->
+        <link href="css/ArticuloComprador.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/cssGlobal.css">
+        <!--Declaracion de codigo comun --> 
+        <script src="js/codigoComun.js"></script>
+        <script src="js/ArticuloComprador.js"></script>
+        <title>Vibbay - Articulo</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="images/VibBay.jpeg"/>
+        <meta charset="utf-8">
+
+
+
+
+    </head>
+    <body>
+        <script type="text/javascript"> callNavBar();</script>
+        <div class="row">
+
+
+            <!-- bloque con datos e imagenes del articulo-->    
+            <div class="col s12 m8 l7  offset-l1">
+                <br>
+                <div class="fichaArticulo z-depth-5">
+                    <br>
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <br>
+                            <div id="Imagen">
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="caracteristicas">
+                        <div class="row">
+                            <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1">
+                                <div class="Nombre">
+                                    <i class="material-icons prefix">chat_bubble</i>
+                                    <font size='+1'>Nombre:</font>
+                                    <div id="Nombre">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s3 m3 l3">
+                                <div class="PrecioSalida">                    
+                                    <i class="material-icons prefix">https</i>
+                                    <font size='+1'>Precio de salida:</font>
+                                    <div id="PrecioSalidaDeArticulo">
+
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1 ">
+                                <div class="Categoria">
+                                    <i class="material-icons prefix">stars</i>    
+                                    <font size='+1'>Categoria:</font>
+                                    <div id="Categoria">
+
+                                    </div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Descripcion">
+                        <div class="row">
+                            <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                                <i class="material-icons prefix">reorder</i>
+                                <font size='+1'>Descripcion:</font>
+                                <div id="Descripcion">
+
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="col hide-on-small-and-down s2 m3 l3 offset-m9 offset-l9">
+                <br>
+                <div class="toc-wrapper pinned" style="top:10%;">
+                    <br>
+                    <div class="MenuPuja z-depth-5">
+                        <div class="card-panel white">
+                            <i class="material-icons prefix">system_update_alt</i>
+                            Puja anterior:
+                            <div id="PujaAnteriorMax">
+
+                            </div>                               <br>
+                            <i class="material-icons prefix">present_to_all</i>
+                            Tu nueva puja:
+                            <form name="nuevaPuja" id="nuevaPuja" method="get">
+                                <div class="input-field">
+                                    <input id="pujaNueva" type="text" class="validate" placeholder="Cantidad X,XXX.XX" required>
+                                </div>
+                                <br>
+                                <div class="BotonPuja ">
+                                    <button id="puja" type="button" class="puja btn green z-depth-5" name="action" style="width: 200px">PUJAR</button>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col hide-on-med-and-up s10 offset-s1">
+                <br>
+                <div class="PanelCompraPequeño" style="top:10%;">
+                    <br>
+                    <div class="MenuPuja z-depth-5">
+                        <div class="card-panel white">
+                            <i class="material-icons prefix">system_update_alt</i>
+                            Puja anterior:
+                            <div id="PujaAnteriorMin">
+
+                            </div>                               <br>
+                            <i class="material-icons prefix">present_to_all</i>
+                            Tu nueva puja:
+                            <form name="nuevaPuja" id="nuevaPuja" method="get">
+                                <div class="input-field">
+                                    <input id="pujaNuevaMin" type="text" class="validate" placeholder="Cantidad X,XXX.XX" required>
+                                </div>
+                                <br>
+                                <div class="BotonPuja ">
+                                    <button id="pujaMin" type="button" class="puja waves-effect waves-light btn green z-depth-5" name="action" style="width: 200px">PUJAR</button>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            callFooter();
+        </script>
+
+    </body>
+</html>

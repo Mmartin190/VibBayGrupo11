@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2016, 13:20:40
+    Author     : Migue
+*/
+
+body{
+    background-color: #f7d098;/*COLOR DE FONDO DE LA PANTALLA*/
+}
+div.fichaArticulo{
+    background-color: white;
+    border-radius: 5%;
+}
+/*Menu de puja*/
+.div.MenuPuja{    
+    background-color: white;
+    border-radius: 5%;
+}
+/*Panel donde se guardan el menu de puja y el de vendedor*/
+.div.card-panel{
+    border-radius: 5%;
+}
+
+/*Boton de venta*/
+.div.BotonVenta{
+    text-align: center;
+}
+/*Modal del historial*/
+.modal1{
+    z-index: 1003;/*Distancia a la que estara el panel sobre la pagina principal*/
+    display: none; 
+    opacity: 0;
+    transform: scaleX(0.7); /*Permite que se pueda ver el panel encima de la pagina principal(2D)*/
+    top: 252.014px;
+}
+/*Botones del historial de puja*/
+.modal1.modal-content.row.col.puja{
+    text-align: center;
+}
+/*Modal del editor*/
+.modal2{
+    z-index: 1003;
+    display: none;
+    opacity: 0;
+    transform: scaleX(0.7);
+    top: 252.014px;
+}
+
+
+.caracteristicas.row.Nombre{
+    position: relative;
+    text-align: justify;
+}
+.caracteristicas.row.PrecioSalida{
+    position: relative;
+    text-align: justify;
+}
+.caracteristicas.row.Categoria{
+    position: relative;
+    text-align: justify;
+}
+
+/* Clase para cuando el panel movil esta en la parte superior*/
+.pin-top {
+    position: relative;
+}
+
+/*Clase para cuando el panel movil esta en la parte inferior*/
+.pin-bottom {
+    position: relative;
+}
+
+/*Clase para cuando el panel movil esta en la zona central*/
+.pinned {
+    position: fixed !important;
+}

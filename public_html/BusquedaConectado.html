@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <!--Importar jQuery antes que materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />   
+        <!--Importar iconos de Google-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Buda:300|Cabin+Sketch|Dosis|Josefin+Sans|Neucha" rel="stylesheet">
+        <!--CSS local-->
+        <link href="css/Busqueda.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/cssGlobal.css">
+        <!--Declaracion de codigo comun --> 
+        <script src="js/codigoComun.js"></script>
+        <script src="js/BusquedaConectado.js"></script>
+        <title>Vibbay - Busqueda</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="images/VibBay.jpeg"/>
+        <meta charset="utf-8">
+
+
+
+
+    </head>
+    <body>
+        <script type="text/javascript"> callNavBar();</script>
+        <div class="row"> 
+            <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                <br>
+                <div class="fichaArticulo z-depth-5">
+                    <br>
+                    <br>
+                    <div class="caracteristicas">
+                        <div class="row">
+                            <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1">
+                                <img id="Logotipo" src="images/VibBay.jpeg">
+                            </div>
+                            <form>
+                                <div class="col s3 m3 l3">
+                                    <div class="input-field">
+                                        <input id="Busca" type="text" placeholder="Introduce tu busqueda">
+                                    </div>    
+                                </div>
+                                <div class="col s3 m3 l3 offset-s1 offset-m1 offset-l1 ">
+                                    <button id="Buscar" type="button" class="puja btn blue z-depth-5" name="action" style="width: 200px">BUSCAR</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <i class="material-icons prefix">reorder</i>
+                            <font size='+1'>Resultados:</font>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <ul class="collection">
+                                <!--Resultados-->
+                                <li class="collection-item">
+                                    <div class="row">
+                                        <div class="col s4 m4 l4 offset-s1 offset-m1 offset-l1">
+                                            <br>
+                                            <div id="Resultados">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            callFooter();
+        </script>
+
+    </body>
+</html>
+
+
